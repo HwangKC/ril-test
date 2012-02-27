@@ -1,0 +1,14 @@
+1. read TS 23.40
+==pdu generator in C.
+==pdu parser in C.
+
+2. 调用系统服务功能，通过那些来判断当前的声音信息等。
+在java层实现测试功能是否会更好？ 把mock-ril看懂。 
+
+3. document.
+
+4. 代码规范化
+
+5. 添加配置文件
+
+6. 添加sim卡短信、sim卡电话本 test cases. 

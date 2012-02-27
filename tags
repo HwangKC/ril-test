@@ -1,0 +1,118 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ASSERT	utils.h	5;"	d
+Context	main.c	/^}Context;$/;"	t	typeref:struct:_Context	file:
+LOCAL_CFLAGS	Android.mk	/^LOCAL_CFLAGS := -DRIL_SHLIB$/;"	m
+LOCAL_MODULE	Android.mk	/^LOCAL_MODULE:= RIL_TEST$/;"	m
+LOCAL_PATH	Android.mk	/^LOCAL_PATH:= $(call my-dir)$/;"	m
+LOCAL_SHARED_LIBRARIES	Android.mk	/^LOCAL_SHARED_LIBRARIES := \\$/;"	m
+LOCAL_SRC_FILES	Android.mk	/^LOCAL_SRC_FILES:= \\$/;"	m
+LOG_TAG	utils.h	3;"	d
+MAX_BUFFER_SIZE	utils.h	17;"	d
+MODEM_CONTROL_H_	modem-control.h	2;"	d
+MODEM_TYPES_H_	modem-types.h	2;"	d
+Modem	modem-control.c	/^}Modem;$/;"	t	typeref:struct:_Modem	file:
+ModemCall	modem-types.h	/^}ModemCall;$/;"	t	typeref:struct:_ModemCall
+PinRemain	modem-types.h	/^}PinRemain;$/;"	t	typeref:struct:_PinRemain
+REGISTER_HOME	utils.h	18;"	d
+REGISTER_ROAMING	utils.h	19;"	d
+SimStatus	modem-types.h	/^}SimStatus;$/;"	t	typeref:struct:_SimStatus
+UNSOL_LISTENER_FUNC	modem-control.h	/^typedef void (*UNSOL_LISTENER_FUNC) (int unsol_id, const void* data, size_t datalen);$/;"	t
+UTILS_H_	utils.h	2;"	d
+_Context	main.c	/^typedef struct _Context$/;"	s	file:
+_Modem	modem-control.c	/^typedef struct _Modem$/;"	s	file:
+_ModemCall	modem-types.h	/^typedef struct _ModemCall$/;"	s
+_PinRemain	modem-types.h	/^typedef struct _PinRemain$/;"	s
+_SimStatus	modem-types.h	/^typedef struct _SimStatus$/;"	s
+already_init	modem-control.c	/^	int already_init;$/;"	m	struct:_Modem	file:
+als	modem-types.h	/^    char            als;        \/* ALS line indicator if available$/;"	m	struct:_ModemCall
+argc	main.c	/^	int argc;$/;"	m	struct:_Context	file:
+argv	main.c	/^	char** argv;$/;"	m	struct:_Context	file:
+callbacks	modem-control.c	/^	RIL_RadioFunctions callbacks;$/;"	m	struct:_Modem	file:
+card_state	modem-types.h	/^	RIL_CardState card_state;$/;"	m	struct:_SimStatus
+e	modem-control.c	/^	RIL_Errno e;$/;"	m	struct:_Modem	file:
+exit_if_fail	utils.h	20;"	d
+has_sim	main.c	/^	int has_sim;$/;"	m	struct:_Context	file:
+index	modem-types.h	/^    int             index;      \/* Connection Index for use with, eg, AT+CHLD *\/$/;"	m	struct:_ModemCall
+init_test	main.c	/^static int init_test()$/;"	f	file:
+isMT	modem-types.h	/^    char            isMT;       \/* nonzero if call is mobile terminated *\/$/;"	m	struct:_ModemCall
+isMpty	modem-types.h	/^    char            isMpty;     \/* nonzero if is mpty call *\/$/;"	m	struct:_ModemCall
+isVoice	modem-types.h	/^    char            isVoice;    \/* nonzero if this is is a voice call *\/$/;"	m	struct:_ModemCall
+isVoicePrivacy	modem-types.h	/^    char            isVoicePrivacy;     \/* nonzero if CDMA voice privacy mode is active *\/$/;"	m	struct:_ModemCall
+is_icc_locked_or_absent	main.c	/^static int is_icc_locked_or_absent()$/;"	f	file:
+is_icc_ready	main.c	/^static int is_icc_ready()$/;"	f	file:
+is_radio_on	main.c	/^static int is_radio_on()$/;"	f	file:
+is_registration_ready	main.c	/^static int is_registration_ready()$/;"	f	file:
+listener_ctx	modem-control.c	/^	void* listener_ctx;$/;"	m	struct:_Modem	file:
+listener_func	modem-control.c	/^	void (*listener_func)(int unsolResponse, const void* data, size_t datalen);$/;"	m	struct:_Modem	file:
+main	main.c	/^int main(int argc, char** argv)$/;"	f
+modem_change_sim_pin	modem-control.c	/^RIL_Errno modem_change_sim_pin(const char* pin[2])$/;"	f
+modem_destroy	modem-control.c	/^void modem_destroy()$/;"	f
+modem_dial	modem-control.c	/^RIL_Errno modem_dial(const char* number)$/;"	f
+modem_get_baseband_version	modem-control.c	/^RIL_Errno modem_get_baseband_version(char* baseband, size_t* len)$/;"	f
+modem_get_current_calls	modem-control.c	/^RIL_Errno modem_get_current_calls(ModemCall* p_call, size_t* call_num)$/;"	f
+modem_get_imei	modem-control.c	/^RIL_Errno modem_get_imei(char* imei, size_t* len)$/;"	f
+modem_get_imsi	modem-control.c	/^RIL_Errno modem_get_imsi(char* imsi, size_t* len)$/;"	f
+modem_get_pin_remain_times	modem-control.c	/^RIL_Errno modem_get_pin_remain_times(PinRemain* remain)$/;"	f
+modem_get_radio_state	modem-control.c	/^RIL_RadioState modem_get_radio_state()$/;"	f
+modem_get_registration_state	modem-control.c	/^RIL_Errno modem_get_registration_state(char** register_state)$/;"	f
+modem_get_sim_status	modem-control.c	/^RIL_Errno modem_get_sim_status(SimStatus* status)$/;"	f
+modem_hangup	modem-control.c	/^RIL_Errno modem_hangup(int index)$/;"	f
+modem_init	modem-control.c	/^int modem_init(int argc, char** argv)$/;"	f
+modem_reset	modem-control.c	/^RIL_Errno modem_reset()$/;"	f
+modem_send_sms	modem-control.c	/^RIL_Errno modem_send_sms(const char* smsc, const char* pdu)$/;"	f
+modem_set_radio_power	modem-control.c	/^RIL_Errno modem_set_radio_power(int on)$/;"	f
+modem_set_unsol_listener	modem-control.c	/^void modem_set_unsol_listener(int unsol_id, UNSOL_LISTENER_FUNC listener, void* ctx)$/;"	f
+modem_unset_unsol_listener	modem-control.c	/^void modem_unset_unsol_listener(int unsol_id)$/;"	f
+my_read_select	utils.c	/^int my_read_select (int read_fd, long timeout)$/;"	f
+name	modem-types.h	/^    char            name[MAX_BUFFER_SIZE];       \/* Remote party name *\/$/;"	m	struct:_ModemCall
+namePresentation	modem-types.h	/^    int             namePresentation; \/* 0=Allowed, 1=Restricted, 2=Not Specified\/Unknown 3=Payphone *\/$/;"	m	struct:_ModemCall
+number	modem-types.h	/^    char            number[MAX_BUFFER_SIZE];     \/* Remote party number *\/$/;"	m	struct:_ModemCall
+numberPresentation	modem-types.h	/^    int             numberPresentation; \/* 0=Allowed, 1=Restricted, 2=Not Specified\/Unknown 3=Payphone *\/$/;"	m	struct:_ModemCall
+onRequestComplete	modem-control.c	/^static void onRequestComplete(RIL_Token t, RIL_Errno e, void *response, size_t user_len)$/;"	f	file:
+onUnsolicitedResponse	modem-control.c	/^static void onUnsolicitedResponse(int unsolResponse, const void *data, size_t datalen)$/;"	f	file:
+pin	modem-types.h	/^	int pin;$/;"	m	struct:_PinRemain
+pin2	modem-types.h	/^	int pin2;$/;"	m	struct:_PinRemain
+pipe_listener_to_main	main.c	/^	int pipe_listener_to_main[2];$/;"	m	struct:_Context	file:
+pipe_main_to_listener	main.c	/^	int pipe_main_to_listener[2];$/;"	m	struct:_Context	file:
+pipe_request_complete	modem-control.c	/^	int pipe_request_complete[2];   $/;"	m	struct:_Modem	file:
+pipe_request_complete_consumed	modem-control.c	/^	int pipe_request_complete_consumed[2];   $/;"	m	struct:_Modem	file:
+puk	modem-types.h	/^	int puk;$/;"	m	struct:_PinRemain
+puk2	modem-types.h	/^	int puk2;$/;"	m	struct:_PinRemain
+radio_state	modem-control.c	/^	RIL_RadioState radio_state;$/;"	m	struct:_Modem	file:
+radio_state_to_string	main.c	/^const char* radio_state_to_string(RIL_RadioState s) $/;"	f
+request_ril	modem-control.c	/^static RIL_Errno request_ril(int request, void* data, size_t datalen, void* user_data, size_t* user_len)$/;"	f	file:
+response_available	modem-control.c	/^	int response_available;$/;"	m	struct:_Modem	file:
+response_call_list	modem-control.c	/^void response_call_list(void* response, size_t user_len)$/;"	f
+response_ints	modem-control.c	/^void response_ints(void* response, size_t user_len)$/;"	f
+response_sim_status	modem-control.c	/^void response_sim_status(void* response, size_t user_len)$/;"	f
+response_string	modem-control.c	/^void response_string(void* response, size_t user_len)$/;"	f
+response_strings	modem-control.c	/^void response_strings(void* response, size_t user_len)$/;"	f
+response_void	modem-control.c	/^void response_void()$/;"	f
+return_val_if_fail	utils.h	21;"	d
+ril_env	modem-control.c	/^struct RIL_Env ril_env = {$/;"	v	typeref:struct:RIL_Env
+s_context	main.c	/^static Context s_context;$/;"	v	file:
+s_context_init	main.c	/^static int s_context_init(int argc, char** argv)$/;"	f	file:
+s_modem	modem-control.c	/^static Modem s_modem;$/;"	v	file:
+state	modem-types.h	/^	RIL_CallState   state;$/;"	m	struct:_ModemCall
+switchUser	modem-control.c	/^static void switchUser() {$/;"	f	file:
+test_cc	main.c	/^static int test_cc()$/;"	f	file:
+test_listener_func	main.c	/^static void test_listener_func(int unsolResponse, const void* data, size_t datalen)$/;"	f	file:
+test_misc	main.c	/^static int test_misc()$/;"	f	file:
+test_sim	main.c	/^static int test_sim()$/;"	f	file:
+test_sms	main.c	/^static int test_sms()$/;"	f	file:
+toa	modem-types.h	/^    int             toa;        \/* type of address, eg 145 = intl *\/$/;"	m	struct:_ModemCall
+universal_pin_state	modem-types.h	/^	RIL_PinState  universal_pin_state;             \/* applicable to USIM and CSIM: RIL_PINSTATE_xxx *\/$/;"	m	struct:_SimStatus
+unsolResoponse	main.c	/^	int unsolResoponse;$/;"	m	struct:_Context	file:
+unsol_data	main.c	/^	const void* unsol_data;$/;"	m	struct:_Context	file:
+unsol_datalen	main.c	/^	size_t unsol_datalen;$/;"	m	struct:_Context	file:
+unsol_listen_id	modem-control.c	/^	int unsol_listen_id;$/;"	m	struct:_Modem	file:
+unsol_mutex	modem-control.c	/^	pthread_mutex_t unsol_mutex;$/;"	m	struct:_Modem	file:
+usage	modem-control.c	/^static void usage(const char *argv0)$/;"	f	file:
+user_data	modem-control.c	/^	void* user_data;$/;"	m	struct:_Modem	file:
+user_len	modem-control.c	/^	size_t user_len;$/;"	m	struct:_Modem	file:
+wait_for_response	modem-control.c	/^static int wait_for_response()$/;"	f	file:
